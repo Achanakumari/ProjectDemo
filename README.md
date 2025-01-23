@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Agriculture Data Analysis
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React application visualizes agriculture data from 1950 to 2020, showing insights into crop production trends in India. It uses **TypeScript**, **Mantine v7**, and **Apache ECharts** for data visualization.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+1. **Table Component**:
+   - Displays the crop with the **maximum production** and **minimum production** for each year (1950–2020).
+   
+2. **Bar Chart Component**:
+   - Visualizes the **average yield** of each crop over the entire period (1950–2020).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+3. **Responsive and Clean Design**:
+   - Built using Mantine v7 components for a modern look and responsive behavior.
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Tech Stack
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React** with TypeScript
+- **Mantine** for UI components
+- **Apache ECharts** for data visualization
+- **Vite** for fast development and build
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Prerequisites
+
+- Node.js (v16 or later)
+- Yarn package manager
+
+---
+
+## Installation and Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Achanakumari/ProjectDemo.git
+   cd projectdemo
